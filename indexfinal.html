@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title style="color: rgb(100, 0, 0);">Tasty Bites Restaurant</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #fafafa;
+      color: #630000;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(0,0,0,0.7);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: #7a7a7af5;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #610000;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: wheat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgb(180, 178, 178);
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      background: #700101;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background: #660000;
+    }
+
+    /* Menu Section */
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #5c0000;
+    }
+    .menu-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .dish {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .dish:hover {
+      transform: translateY(-5px);
+    }
+    .dish img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .dish h3 {
+      margin: 15px 0 10px;
+      color: #333;
+    }
+    .dish p {
+      padding: 0 15px 20px;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1 style="color: #640000;">Tasty Bites</h1>
+    <p style="color: #440000;">Fine dining, fresh flavors</p>
+    <button>Explore Menu</button>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <h2>Our Signature Dishes</h2>
+    <div class="menu-grid">
+      <div class="dish">
+        <img src="Pizza.png" alt="Pizza">
+        <h3>Wood-Fired Pizza</h3>
+        <p>Authentic Italian crust with fresh toppings.</p>
+      </div>
+      <div class="dish">
+        <img src="Burger.png" alt="Burger">
+        <h3>Gourmet Burger</h3>
+        <p>Juicy beef patty with artisanal buns.</p>
+      </div>
+      <div class="dish">
+        <img src="Pasta.png" alt="Pasta">
+        <h3>Truffle Pasta</h3>
+        <p>Rich creamy sauce with shaved truffles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Tasty Bites, we blend tradition and innovation to create unforgettable dining experiences. Our chefs use the finest ingredients to craft dishes that delight every palate.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: reservations@tastybites.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: 123 Food Street, Cuddapah</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Tasty Bites Restaurant</p>
+    <p>Follow us on Instagram @tastybites</p>
+  </footer>
+
+</body>
+</html>
